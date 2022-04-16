@@ -1,0 +1,99 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  margin: 20px auto;
+}
+.firstnav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #3700B3;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+.firstnav h1{
+  color: #3700B3 ;
+  font-size: 35px;
+ 
+}
+.secondnav a{
+  color: var(--color);
+  transition: color .3s ease-in-out, border-bottom .1s ease-in-out;
+  text-decoration: none;
+}
+.secondnav a:nth-child(2){
+  margin: 0px 40px;
+}
+.secondnav a:hover{
+  border-bottom:  5px solid var(--background);
+ 
+  color: #7747e7;
+}
+.ham{
+  display: none;
+}
+@media screen and (max-width:500px) {
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+   
+  }
+  
+  .secondnav{
+   display: none;
+  }
+  .show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3700B3;
+   height: 100vh;
+   position: fixed;
+   width: 150px;
+   right: 0;
+   top: 0;
+    z-index: 2;
+    padding: 20px 80px;
+    animation: 0.4s nav;
+  }
+  .contain{
+
+
+  }
+  @keyframes nav {
+    0%{
+      transform: translateX(200px);
+    }
+   
+  }
+  .secondnav a{
+    margin-bottom: 40px;
+  }
+  .secondnav a:nth-child(2){
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .ham{
+    display: block;
+  position: absolute;
+    top:10px;
+    right: 10%;
+    z-index: 3;
+  }
+  .another{
+    position:fixed;
+     height:100%; 
+     width:100%;
+      left:0; 
+      top:0; 
+      z-index:1;
+  }
+}

@@ -1,0 +1,108 @@
+.works{
+
+  background: linear-gradient(90deg,#3700B3,#4500e0) ;
+  opacity: 0.8;
+  padding: 60px 0px;
+ 
+}
+.workscontainer{
+  width: 1000px;
+  margin: 50px auto;
+}
+
+.project{
+margin-top: 55px;
+ background: #0A192F;
+
+ width: 600px;
+ height: 170px;
+ padding: 20px;
+ border-radius: 7px;
+}
+.project p{
+  color: var(--color);
+  line-height: 2rem;
+}
+.project a{
+  color: var(--color);
+}
+.projectbox{
+  margin-bottom: 110px;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between;
+}
+.projectimg1{
+  width: 500px;
+  height: 350px;
+  background: url('../assets/short.png')no-repeat center center/cover;
+  background-size: 200px;
+  transition: 0.6s ease-in-out;
+  margin-top: -15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.projectimg1:hover {
+  cursor: pointer;
+  /* background-color: #3700B3;
+  z-index: 2;
+  background-size: 300px;*/
+  /* transition: 0.6s ease-in-out; 
+  transform: translateZ(10px) rotateX(20deg) rotateY(30deg); */
+}
+.projectimg2{
+  width: 250px;
+  height: 350px;
+  background: url('../assets/fiber.png')no-repeat center center/cover;
+  background-size: 200px;
+  transition: 1s ease-in-out;
+  margin-top: -15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.projectimg3{
+  width: 250px;
+  height: 350px;
+  background: url('../assets/branding.png')no-repeat center center/cover;
+  background-size: 200px;
+  transition: 1s ease-in-out;
+  margin-top: -15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.projectimg2:hover {
+  cursor: pointer;
+  /* background-color: #3700B3;
+  z-index: 2;
+  background-size: 300px;
+  transition: 1s ease-in-out; */
+  /* transition: 0.6s ease-in-out; 
+  transform: translateZ(-10px) rotateX(20deg) rotateY(30deg); */
+}
+@media screen and (max-width:500px) {
+  .works{
+    width: 100%;
+    background: linear-gradient(90deg,#3700B3,#4500e0);
+    border-radius: none;
+    border-top-left-radius: 0%;
+  
+  border-bottom-right-radius: 0%;
+  }
+  .workscontainer{
+    width: 90%;
+    margin: 20px auto;
+  }
+  .projectbox{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+  }
+  .project{
+    margin-bottom: 50px;
+    
+    height: 250px;
+    width: 90%;
+  }
+  .projectimg1{
+    width: 250px;
+  }
+}

@@ -1,0 +1,8 @@
+:root{
+  --color: rgb(190, 186, 186);
+  --background: #3700B3;
+}
+
+@media screen and (max-width: 500px) {
+  
+}
